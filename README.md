@@ -53,12 +53,16 @@ Run je test met Maven via de commandline. Er is een kans dat Maven de test niet 
 * Voor uitleg hoe je dit probleem moet oplossen, lees deze [tutorial](https://junit.org/junit5/docs/current/user-guide/#running-tests-build-maven).
   
 ## Oefening 5: Schrijf een tweede unittest voor Fizz
-* Voeg een tweede unittest toe die test of de methode `execute(int)` de string `Fizz` teruggeeft wanneer `int` deelbaar is door 3 en zorg ervoor dat deze unittest slaagt. Kies zelf een of meerdere getallen om te testen. Je kunt nu een deel van de vorige oplossing beschikbaar maken. Hint: het juiste `if`-statement.
+* Voeg een tweede unittest toe die test of de methode
+* execute(int)` de string `Fizz` teruggeeft wanneer `int` deelbaar is door 3 en zorg ervoor dat deze unittest slaagt. 
+* Kies zelf een of meerdere getallen om te testen.
+* Je kunt nu een deel van de vorige oplossing beschikbaar maken. Hint: het juiste `if`-statement.
 
 ## Oefening 6: Voeg een setup() methode toe aan je testklasse
 In beide unittests die je nu hebt gemaakt instantieer je een `FizzBuzzExecutor`. Je hebt hier dus herhalende code. Om dit op te lossen voegen we een *setup* methode toe.
 
-* Voeg de volgende methode en instantie-variabele toe aan je testklasse. Annoteer de methode met `@BeforeEach` zodat deze code voor elke `@Test` uitgevoerd gaat worden. Verwijder dan ook deze code uit de twee tests. Die is nu overbodig geworden.
+* Voeg de volgende methode en instantie-variabele toe aan je testklasse. Annoteer de methode met `@BeforeEach` zodat deze code voor elke `@Test` uitgevoerd gaat worden. 
+* Verwijder dan ook deze code uit de twee tests. Die is nu overbodig geworden.
 ```java
     private FizzBuzzExecutor sut;
     
@@ -74,7 +78,9 @@ In beide unittests die je nu hebt gemaakt instantieer je een `FizzBuzzExecutor`.
 * Voeg een vierde unittest toe die test of de methode `execute(int)` de string `FizzBuzz` teruggeeft wanneer `int` deelbaar is door 15 en zorg ervoor dat deze unittest slaagt.
 
 ## Oefening 9: Run with Coverage
-Gebruik IntelliJ om je unittests uit te voeren en gelijktijdig inzichtelijk te maken welk percentage van je code wordt ge-unittest. Dit heet de 'code coverage'. Ook dit kan via het contextmenu, echter moet je daarvoor NIET met de rechter-muisknop op de unittest klikken, maar op de testklasse.
+Gebruik IntelliJ om je unittests uit te voeren en gelijktijdig inzichtelijk te maken welk percentage van je code wordt ge-unittest. 
+Dit heet de 'code coverage'. 
+Ook dit kan via het contextmenu, echter moet je daarvoor NIET met de rechter-muisknop op de unittest klikken, maar op de testklasse.
 
 Om het tonen van Coverage weer uit te zetten ga je in de IDE naar `Run > Hide Coverage`.
 
