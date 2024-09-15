@@ -1,4 +1,4 @@
-import nl.han.ica.oose.dea.testedfizzbuzz.FizzBuzzExecutor;
+package nl.han.ica.oose.dea.testedfizzbuzz;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,7 +13,7 @@ public class FizzBuzzTest {
 	}
 
 	@Test
-	void executeWithValidIntTest(){
+	void executeWithValidIntTest() {
 
 		// Act
 		var testValue = sut.execute(37);
